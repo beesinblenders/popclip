@@ -99,7 +99,7 @@ fi
 # Copy the replacement to clipboard
 echo -n "$selected_synonym" | pbcopy
 
-# Emulate Cmd+V for paste in Obsidian
+# Emulate Cmd+V
 osascript <<EOF
 tell application "System Events"
     keystroke "v" using command down
