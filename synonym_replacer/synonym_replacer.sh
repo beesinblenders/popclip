@@ -6,7 +6,7 @@ word="$POPCLIP_TEXT"
 API_KEY="${POPCLIP_OPTION_API_KEY}"
 
 # Log debug info
-env > /tmp/popclip_debug.log
+# env > /tmp/popclip_debug.log
 # echo "Starting script for word: $word" >> /tmp/popclip_debug.log
 
 if [ -z "$API_KEY" ]; then
@@ -27,7 +27,7 @@ get_synonyms() {
         },
         {
           \"role\": \"user\",
-          \"content\": \"Donne 5 synonymes ou remplacements possibles pour le mot ou l'expression \\\"$word\\\". Assure-toi que ta réponse respecte bien les règles de structure du schéma fourni.\"
+          \"content\": \Provide 5 synonyms or alternative expressions for \\\"$word\\\". Make sure your answer fits the provided schema.\"
         }
       ],
       \"response_format\": {
@@ -80,7 +80,7 @@ fi
 # Use AppleScript for dropdown selection
 selected_synonym=$(osascript <<EOF
 set synonyms to paragraphs of "$synonyms"
-set chosenWord to (choose from list synonyms with title "Choose a synonym" with prompt "Choisir un remplacement pour '$word':" default items {item 1 of synonyms})
+set chosenWord to (choose from list synonyms with title "Choose a synonym" with prompt "Pick replacement for '$word':" default items {item 1 of synonyms})
 if chosenWord is false then
     return "$word"
 else
