@@ -1,0 +1,27 @@
+{
+  "popclipVersion": 4688,
+  "name": "Rephrase",
+  "icon": "rephrase.png",
+  "description": "Replace a selected word with one of its synonyms.",
+  "actions": [
+      {
+          "title": "Rephrase",
+          "shell script file": "./rephrase.sh",
+          "interpreter": "/bin/bash"
+      }
+  ],
+  "options": [
+      {
+          "identifier": "API_KEY",
+          "type": "string",
+          "label": "Your OpenAI API key",
+          "description": "You can get one from OpenAI at platform.openai.com."
+      },
+      {
+          "identifier": "LANGUAGE",
+          "type": "string",
+          "label": "Language",
+          "description": "E.g. en, fr, de... Leave empty to default to your system's locale."
+      }
+  ]
+}
