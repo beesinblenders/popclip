@@ -1,0 +1,8 @@
+{
+  "name": "Word comment",
+  "icon": "bubble.png",
+  "applescript file": "wordcomment.applescript",
+  "required apps": [
+        "com.microsoft.Word"
+    ]
+}
