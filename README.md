@@ -1,5 +1,5 @@
 # My PopClip extensions
-When I make PopClip extensions that I think can be useful to other people I will put them here.
+When I make [PopClip](https://www.popclip.app) extensions that I think can be useful to other people I will put them here.
 
 _(To install, download and open the file ending in .popclipextz)_
 
