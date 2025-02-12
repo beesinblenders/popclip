@@ -1,0 +1,12 @@
+{
+  "name": "Append to Quick Draft",
+  "icon": "icon.png",
+  "description": "Appends the selected text to Quick Draft, a scratchpad application.",
+  "actions": [
+      {
+          "title": "Append to Quick Draft",
+          "shell script file": "./appendToQuickDraft.sh",
+          "interpreter": "/bin/bash"
+      }
+  ]
+}
