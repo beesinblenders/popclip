@@ -5,8 +5,7 @@
   "actions": [
       {
           "title": "Append to Quick Draft",
-          "shell script file": "./appendToQuickDraft.sh",
-          "interpreter": "/bin/bash"
+          "url": "quick-draft://x-callback-url/append?text={popclip text}"
       }
   ]
 }
